@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nome": "Caneta Azul",
+    "descricao": "Uma caneta azul muito boa",
+    "preco": 5.99,
+    "codigoBarras": "1234567890"
+  },
+  {
+    "id": 2,
+    "nome": "Caneta Esferográfica Trilux Style Colors",
+    "descricao": "Pacote com 5 cores pastel 1.0mm",
+    "preco": 16.55,
+    "codigoBarras": "MLB3709999006"
+  },
+  {
+    "id": 3,
+    "nome": "Lápis de Cor Faber-Castell 12 Cores",
+    "descricao": "Lápis de cor sextavado com cores vibrantes",
+    "preco": 24.9,
+    "codigoBarras": "MLB3712345678"
+  },
+  {
+    "id": 4,
+    "nome": "Caderno Universitário 10 Matérias",
+    "descricao": "Caderno espiral com 200 folhas, capa dura",
+    "preco": 35.5,
+    "codigoBarras": "MLB3719876543"
+  },
+  {
+    "id": 5,
+    "nome": "Calculadora Científica Casio FX-82MS",
+    "descricao": "Calculadora científica com 240 funções",
+    "preco": 89.9,
+    "codigoBarras": "MLB3723456789"
+  }
+]

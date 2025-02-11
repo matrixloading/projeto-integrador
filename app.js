@@ -1,12 +1,19 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'});
-    res.end('Olá, Mundo!');
-});
+const produtoController = require('./controllers/produtoController');
+const fornecedorController = require('./controllers/fornecedorController');
+const associacaoController = require('./controllers/associacaoController');
 
-const PORT = 3000;
+app.use(express.json());
 
-server.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}/`);
-});
+app.post('/produtos', produtoController.criarProduto);
+app.get('/produtos', produtoController.listarProdutos);
+
+app.post('/fornecedores', fornecedorController.criarFornecedor);
+app.get('/fornecedores', fornecedorController.listarFornecedores);
+
+app.post('/associacoes', associacaoController.associarFornecedorProduto);
+app.get('/associacoes', associacaoController.listarAssociacoes);
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
